@@ -1,0 +1,22 @@
+{
+  "name": "project-managment",
+  "version": "1.0.0",
+  "description": "project managment-",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shilat75/project-managment.git"
+  },
+  "author": "gitit dadon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shilat75/project-managment/issues"
+  },
+  "homepage": "https://github.com/Shilat75/project-managment#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
