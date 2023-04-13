@@ -1,0 +1,33 @@
+{
+  "name": "project-managment",
+  "version": "1.0.0",
+  "description": "project managment-",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "lint": "eslint src/* --color",
+    "test": "mocha tests/*.spec.js --color"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Shilat75/project-managment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shilat75/project-managment/issues"
+  },
+  "homepage": "https://github.com/Shilat75/project-managment#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.22"
+  }
+}
