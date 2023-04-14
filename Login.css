@@ -23,6 +23,7 @@ nav{
     animation: nav-load 300ms ease-in;
 
 }
+
 nav ul li{
         font-family: 'Montserrat', sans-serif;
         font-weight: 600;
@@ -53,11 +54,12 @@ nav ul li a{
         margin: 8vh 10vw;
         box-shadow: 0 0 45px 0 rgb(227, 229, 204);
         padding: 50px 50px;
-    
+        display: flex;
+ 
 }
 .loginbox .font{
     text-align: center;   
-    padding: 20px; 
+    padding:0px; 
     font-family: 'Montserrat',sans-serif;
     color: rgba(252, 255, 232, 0.76);
     font-size: 2vw;
@@ -69,30 +71,83 @@ nav ul li a{
     transform: scale(1);
 }
 .loginbox .font h4{
-    font-size: xx-large;
-    margin: 8px;
+    font-weight: 200;
+    font-size: 30px;
+    margin: 24px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .textbox{
     margin-bottom:10%;
-    padding: 15px 30px;
+    margin-left: 25px;
+    padding: 15px 20px;
     font-family: 'Montserrat',sans-serif;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #d3d3d3;
+    box-shadow: 0 0 15px 0 rgb(227, 229, 204);
+
     
 }
 .textbox input[type="text"] {
     width: 100%;
+    height: 100%;
     border: none;
     outline: none;
     font-size: 25px;
     background-color: #d3d3d3;
     
   }
+.textbox :hover{
+    box-shadow: 0 0 80px 0 #d3d3d3,
+    0 0 80px 0 #d3d3d3 , 0 0 90px 0 #d3d3d3 inset;
+}
+
 .loginbox ul li a{
     display: inline-block;
-    margin: 0px 12px;
+    margin: 0px 15px;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 25px;
+
+
+}
+.logo{
+    color: #d3d3d3;
+    font-family: monospace;
+    padding: 10px 10px;
+
+}
+.submit{
+    width: 150px;
+    height: 20px;
+    padding: 15px 15px;
+    border-radius: 2%;
+    background-color: transparent;
+    border:double #d3d3d3 1px ;
+    cursor: pointer;
+    color:#d3d3d3;
+    font-weight: 200;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 15px 0 white;
+    animation-name: nav-link-load;
+    animation-duration:var(--nav-link-load-time) ;
+    animation-timing-function: ease-in;
+    animation-delay: var(300ms);
+    animation-fill-mode: forwards;
+    transform: scale(1.1);
+    margin-left: 105px;
+}
+.submit:hover{
+    background-color: #eeeed0;
+    color: black;
+}
+.submit:active{
+    background-color: transparent;
+    color: #d3d3d3;
+    box-shadow: 0 0 80px 0 #d3d3d3,
+    0 0 80px 0 #d3d3d3 , 0 0 90px 0 #d3d3d3 inset;
 
 }

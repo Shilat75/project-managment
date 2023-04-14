@@ -16,23 +16,54 @@
         <div class="bg-img">
             <nav>
                 <ul>
-                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a href="index.html"><span>Home</span></a></li></ul>
+                    <div class="logo"><span>
+                        <h1>Mental Medical</h1></span>
+                    </div>
+
     
             </nav>
             <hr>
-
+            <form>
             <div class="loginbox">
                 <div class="font">
+
                     <h4>Login</h4>
-                    <div class="textbox">  <input type="text" placeholder="Enter Username"></div>
-                     <div class="textbox">  <input type="text" placeholder="Enter Password"></div>
+
+                    <div class="textbox">  <input type="text" id="email-input" placeholder="Enter Username"></div>
+                     <div class="textbox">  <input type="text" id="password-input" placeholder="Enter Password"></div>
+                     <div class="submit">Submit</div>
+
                      <ul>
                      <li><a><h6>Forgot Password</h6></a><a><h6>Sign Up</h6></a></li></ul>
                 </div>
             </div>
-            
+
+        </form>
         </div>
     </main>
-    
+    <script>
+        function isValidEmail(email) {
+        // regular expression for email validation
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      // add event listener to email input field
+      const emailInput = document.getElementById('email-input');
+      const emailErrorMessage = document.getElementById('email-error-message');
+      emailInput.addEventListener('input', function() {
+        const email = emailInput.value;
+        if (!isValidEmail(email)) {
+          emailInput.setCustomValidity(''); // reset the default message
+          emailErrorMessage.textContent = 'Please enter a valid email address'; // display the error message
+        } else {
+          emailInput.setCustomValidity('');
+          emailErrorMessage.textContent = ''; // clear the error message
+        }
+      });
+          
+         </script>
  </body>
+
 </html>
