@@ -23,6 +23,9 @@ jobs:
            command: npm run lint
 
 workflow:
-    example-workflow:
-       jobs:
-          - cicd -job
+  example-workflow:
+    jobs:
+      - cicd-job
+
+
+     
