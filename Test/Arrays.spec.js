@@ -6,7 +6,7 @@ describe('Arrays' , () => {
 
   describe('#sort' , () => {
         it('Sorting names array ' , () => {
-           var names = ['Dani' , 'Moshe' , 'Adam'];
+           var names = ['Shilat' , 'Moshe' , 'Adam'];
            expect(names.sort()).to.be.eql(['Adam' , 'Dani' , 'Moshe']);
         })
   })
